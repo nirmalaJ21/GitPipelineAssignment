@@ -1,4 +1,4 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# This workflow will install Python dependencies, run tests, lint, and build/push a Docker image
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
 name: Docker Build and Push
@@ -55,7 +55,3 @@ jobs:
         tags: your-docker-hub-username/your-docker-image-name:latest
         username: ${{ secrets.DOCKERHUB_nirmalajoshi5 }}
         password: ${{ secrets.DOCKERHUB_dckr_pat_rfRwcYl0zpehVK5IGa9NTatsftw}}
-
-      run: |
-
-        pytest
